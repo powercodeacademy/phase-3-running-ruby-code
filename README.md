@@ -51,7 +51,7 @@ Instead, you'll need to use the Ruby interpreter to run your code from the
 terminal. You can check which version of Ruby you're using with this command:
 
 ```console
-$ ruby -v
+ruby -v
 ruby 2.7.3p183 (2021-04-05 revision 6847ee089d) [x86_64-darwin19]
 ```
 
@@ -59,7 +59,7 @@ To run the application, enter the command `ruby filename.rb`, where
 `filename.rb` is the relative path to the file you'd like to run:
 
 ```console
-$ ruby app.rb
+ruby app.rb
 Hello world!
 ```
 
@@ -117,7 +117,7 @@ produce the following output, with each element of the array printed to a new
 line in the console:
 
 ```console
-$ ruby app.rb
+ruby app.rb
 1
 2
 3
@@ -135,7 +135,7 @@ The `p` method will output the data in a nicer format by calling the `.inspect`
 method on our data.
 
 ```console
-$ ruby app.rb
+ruby app.rb
 [1, 2, 3]
 ```
 
@@ -151,7 +151,7 @@ The `pp` method will "pretty-print" these objects by calling the
 `.pretty_inspect` method on our data.
 
 ```console
-$ ruby app.rb
+ruby app.rb
 [{:id=>1, :hello=>"World"},
  {:id=>2, :hello=>"Ruby"},
  {:id=>3, :hello=>"Moon"},
@@ -169,7 +169,7 @@ to run an entire application.
 To use IRB, go into the terminal and enter `irb`:
 
 ```console
-$ irb
+irb
 2.7.3 :001 >
 ```
 
@@ -244,11 +244,11 @@ All of this is valid Ruby code, but it should read (more or less) like English:
 Clear out the code in `app.rb` to start from scratch so we can try getting these
 tests to pass.
 
-To run the tests, you can use either the `rspec` command or `learn test`. Run
+To run the tests, you can use either the `rspec` command or `bin/rspec`. Run
 the command, then take a moment to study the output:
 
 ```console
-$ learn test
+bin/rspec
 
 the program
   has a file app.rb
@@ -315,7 +315,7 @@ after the first failing test. This technique is helpful for focusing your attent
 on one problem at a time:
 
 ```console
-$ learn test --f-f
+bin/rspec --f-f
 
 the program
   has a file app.rb
@@ -351,7 +351,7 @@ as described by the tests:
 - Use `print` to display the string `"Pass this test, please."`
 - Use `p` to display the array `[1,2,3]`
 
-Using `learn test` will run the tests and sync your progress with GitHub and
+Using `bin/rspec` will run the tests and sync your progress with GitHub and
 Canvas. When your tests are all passing, the lab is complete!
 
 ## Conclusion
@@ -367,4 +367,3 @@ to get practice with all of them as you progress through this phase!
 - [Understanding The Differences Between Puts, Print & P](https://www.rubyguides.com/2018/10/puts-vs-print/)
 - [Ruby in Twenty Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 - [RSpec Documentation](https://rspec.info/)
-# rewrite-array-methods
